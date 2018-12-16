@@ -8,3 +8,5 @@ Hakan Gökmen SAYIM
 Volkan BAKIR
 
 This is a javafx project.
+
+While designing UI Helvetica font family is used.
