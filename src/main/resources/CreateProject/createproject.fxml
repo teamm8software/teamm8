@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.materialicons.MaterialIconView?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="rootStackPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="525.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CreateProject.CProjectController">
+   <children>
+      <AnchorPane fx:id="rootAnchor" prefHeight="700.0" prefWidth="876.0" style="-fx-background-color: #ffffff; -fx-border-width: 5; -fx-border-color: #e0e0e0;" styleClass="back">
+         <children>
+            <Label layoutX="33.0" layoutY="111.0" prefHeight="30.0" prefWidth="117.0" text="Description :" textFill="#5b5b5b">
+               <font>
+                  <Font name="HelveticaNeueLTPro-MdCn" size="20.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="btn_send" layoutX="462.0" layoutY="431.0" prefHeight="49.0" prefWidth="390.0" style="-fx-background-color: #ff4d4d;" text="SEND" textFill="WHITE">
+               <font>
+                  <Font name="HelveticaNeueLTPro-Md" size="14.0" />
+               </font></JFXButton>
+            <MaterialIconView fx:id="icon_exit" fill="#d75959" glyphName="POWER_SETTINGS_NEW" layoutX="861.0" layoutY="39.0" size="25" />
+            <Label layoutX="462.0" layoutY="112.0" prefHeight="30.0" prefWidth="158.0" text="Project Manager :  " textFill="#5b5b5b">
+               <font>
+                  <Font name="HelveticaNeueLTPro-MdCn" size="20.0" />
+               </font>
+            </Label>
+            <JFXTextArea fx:id="txt_description" focusColor="#ff4d4d" layoutX="33.0" layoutY="158.0" prefHeight="210.0" prefWidth="340.0" promptText=" Please enter a description" style="-fx-background-color: #f9f9f9; -fx-border-width: 1; -fx-border-color: #e0e0e0;" stylesheets="@cproject.css">
+               <font>
+                  <Font name="HelveticaNeueLTPro-Lt" size="14.0" />
+               </font>
+            </JFXTextArea>
+            <JFXTextField fx:id="txt_name" alignment="CENTER" focusColor="#ff4d4d" layoutX="173.0" layoutY="14.0" prefHeight="35.0" prefWidth="554.0" promptText="Project Name" stylesheets="@cproject.css" unFocusColor="#bfbfbf">
+               <font>
+                  <Font name="HelveticaNeueLTPro-MdCn" size="20.0" />
+               </font>
+            </JFXTextField>
+            <JFXComboBox fx:id="com_manager" focusColor="#ff4d4d" layoutX="620.0" layoutY="114.0" prefHeight="25.0" prefWidth="164.0" promptText=" Select project manager" style="-fx-font-family: HelveticaNeueLT Pro 45 Lt; -fx-background-color: #f9f9f9; -fx-border-width: 1; -fx-border-color: #e0e0e0;" stylesheets="@cproject.css" />
+            <Label layoutX="462.0" layoutY="176.0" prefHeight="30.0" prefWidth="150.0" text="Team Members :" textFill="#5b5b5b">
+               <font>
+                  <Font name="HelveticaNeueLTPro-MdCn" size="20.0" />
+               </font>
+            </Label>
+            <JFXComboBox fx:id="com_member" focusColor="#ff4d4d" layoutX="620.0" layoutY="178.0" prefHeight="27.0" prefWidth="164.0" promptText=" Select team member" style="-fx-font-family: HelveticaNeueLT Pro 45 Lt; -fx-background-color: #f9f9f9; -fx-border-width: 1; -fx-border-color: #e0e0e0;" stylesheets="@cproject.css" />
+            <JFXButton fx:id="btn_add" layoutX="808.0" layoutY="177.0" prefHeight="30.0" prefWidth="45.0" style="-fx-background-color: #ff4d4d;" text="ADD" textFill="WHITE">
+               <font>
+                  <Font name="HelveticaNeueLTPro-Md" size="12.0" />
+               </font></JFXButton>
+            <JFXListView fx:id="list_member" layoutX="462.0" layoutY="243.0" prefHeight="145.0" prefWidth="390.0" style="-fx-background-color: #f9f9f9; -fx-border-width: 1; -fx-border-color: #e0e0e0;" styleClass="list" />
+            <DatePicker fx:id="date_start" layoutX="161.0" layoutY="403.0" prefHeight="25.0" prefWidth="210.0" promptText="Start Date" styleClass="datePicker" />
+            <Label layoutX="33.0" layoutY="400.0" prefHeight="30.0" prefWidth="117.0" text="Start Date :" textFill="#5b5b5b">
+               <font>
+                  <Font name="HelveticaNeueLTPro-MdCn" size="20.0" />
+               </font>
+            </Label>
+            <DatePicker fx:id="date_end" layoutX="161.0" layoutY="453.0" prefHeight="25.0" prefWidth="210.0" promptText="End Date" styleClass="datePicker" />
+            <Label layoutX="33.0" layoutY="450.0" prefHeight="30.0" prefWidth="117.0" text="End Date :" textFill="#5b5b5b">
+               <font>
+                  <Font name="HelveticaNeueLTPro-MdCn" size="20.0" />
+               </font>
+            </Label>
+            <Line endX="-70.0" layoutX="134.0" layoutY="144.0" startX="-100.0" stroke="#bfbfbf" />
+            <Line endX="-70.0" layoutX="134.0" layoutY="433.0" startX="-100.0" stroke="#bfbfbf" />
+            <Line endX="-70.0" layoutX="134.0" layoutY="483.0" startX="-100.0" stroke="#bfbfbf" />
+            <Line endX="-70.0" layoutX="563.0" layoutY="145.0" startX="-100.0" stroke="#bfbfbf" />
+            <Line endX="-70.0" layoutX="563.0" layoutY="209.0" startX="-100.0" stroke="#bfbfbf" />
+            <Line endX="64.0" endY="90.0" layoutX="355.0" layoutY="108.0" startX="64.0" startY="220.0" stroke="#bfbfbf" />
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

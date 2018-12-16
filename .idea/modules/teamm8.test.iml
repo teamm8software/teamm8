@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id="teamm8:test" external.linked.project.path="$MODULE_DIR$/../.." external.root.project.path="$MODULE_DIR$/../.." external.system.id="GRADLE" external.system.module.group="" external.system.module.type="sourceSet" external.system.module.version="unspecified" type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_11">
+    <output-test url="file://$MODULE_DIR$/../../out/test/classes" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../src/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../src/test/java" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../../src/test/resources" type="java-test-resource" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="teamm8.main" />
+    <orderEntry type="library" name="Gradle: org.openjfx:javafx-fxml:win:11.0.1" level="project" />
+    <orderEntry type="library" name="Gradle: org.openjfx:javafx-controls:win:11.0.1" level="project" />
+    <orderEntry type="library" name="Gradle: org.openjfx:javafx-controls:11.0.1" level="project" />
+    <orderEntry type="library" name="Gradle: org.openjfx:javafx-graphics:win:11.0.1" level="project" />
+    <orderEntry type="library" name="Gradle: org.openjfx:javafx-graphics:11.0.1" level="project" />
+    <orderEntry type="library" name="Gradle: com.jfoenix:jfoenix:9.0.8" level="project" />
+    <orderEntry type="library" name="Gradle: de.jensd:fontawesomefx-materialicons:2.2.0-9.1.2" level="project" />
+    <orderEntry type="library" name="Gradle: org.mongodb:mongodb-driver:3.9.1" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.apis:google-api-services-drive:v3-rev110-1.23.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.api-client:google-api-client:1.27.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.oauth-client:google-oauth-client-jetty:1.23.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.dropbox.core:dropbox-core-sdk:3.0.10" level="project" />
+    <orderEntry type="library" name="Gradle: com.victorlaerte:jfx-asynctask:1.0.1" level="project" />
+    <orderEntry type="library" name="Gradle: org.openjfx:javafx-base:win:11.0.1" level="project" />
+    <orderEntry type="library" name="Gradle: org.openjfx:javafx-base:11.0.1" level="project" />
+    <orderEntry type="library" name="Gradle: de.jensd:fontawesomefx-commons:9.1.2" level="project" />
+    <orderEntry type="library" name="Gradle: org.mongodb:mongodb-driver-core:3.9.1" level="project" />
+    <orderEntry type="library" name="Gradle: org.mongodb:bson:3.9.1" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.oauth-client:google-oauth-client-java6:1.23.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.oauth-client:google-oauth-client:1.27.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.http-client:google-http-client-jackson2:1.27.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.http-client:google-http-client:1.27.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.guava:guava:20.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.mortbay.jetty:jetty:6.1.26" level="project" />
+    <orderEntry type="library" name="Gradle: com.fasterxml.jackson.core:jackson-core:2.9.6" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.code.findbugs:jsr305:3.0.2" level="project" />
+    <orderEntry type="library" name="Gradle: org.mortbay.jetty:jetty-util:6.1.26" level="project" />
+    <orderEntry type="library" name="Gradle: org.mortbay.jetty:servlet-api:2.5-20081211" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.httpcomponents:httpclient:4.5.5" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.j2objc:j2objc-annotations:1.1" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.httpcomponents:httpcore:4.4.9" level="project" />
+    <orderEntry type="library" name="Gradle: commons-logging:commons-logging:1.2" level="project" />
+    <orderEntry type="library" name="Gradle: commons-codec:commons-codec:1.10" level="project" />
+  </component>
+  <component name="TestModuleProperties" production-module="teamm8.main" />
+</module>

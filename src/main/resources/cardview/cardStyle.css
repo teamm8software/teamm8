@@ -1,0 +1,37 @@
+#card_view {
+    -fx-background-color:  #ffffff;
+    -fx-border-color:#e0e0e0;
+    -fx-border-width: 1;
+
+}
+
+#card_view:hover {
+    -fx-border-color:  #ff4d4d;
+    -fx-border-width: 1;
+-fx-effect: dropShadow(three-pass-box, #adadad, 3, 0, 0, 0);
+}
+#card_view:pressed {
+        -fx-background-color:  #fafafa;
+        -fx-border-color:  #ff4d4d;
+        -fx-border-width: 1;
+
+
+}
+.pBar .track{
+-fx-background-color:transparent;
+-fx-box-border-radius:0;
+-fx-height:9;
+}
+.pBar .bar {
+    -fx-background-color:
+        -fx-box-border,
+        linear-gradient(to bottom, derive(-fx-accent,95%), derive(-fx-accent,10%)),
+        #ff4d4d; /* this line is the background color of the bar */
+    -fx-background-insets: 0, 0, 0;
+-fx-height:9;
+    -fx-background-radius:0;
+
+}
+.done:hover{
+-fx-fill:GREEN;
+}

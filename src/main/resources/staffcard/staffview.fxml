@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.materialicons.MaterialIconView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<fx:root id="staff_view" fx:id="staff_view" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="60.0" prefWidth="700.0" stylesheets="@staffStyle.css" type="AnchorPane" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label id="lbl_namesurname" fx:id="lbl_namesurname" layoutX="105.0" layoutY="1.0" prefHeight="60.0" prefWidth="230.0" text="Name Surname" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="105.0" AnchorPane.topAnchor="0.0">
+         <font>
+            <Font name="HelveticaNeueLTPro-Lt" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbl_role" layoutX="342.0" layoutY="1.0" prefHeight="60.0" prefWidth="114.0" text="Project Manager" textAlignment="JUSTIFY" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <font>
+            <Font name="HelveticaNeueLTPro-Md" size="14.0" />
+         </font>
+      </Label>
+      <Circle fx:id="circle_staff_pic" fill="RED" layoutX="34.0" layoutY="30.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" AnchorPane.bottomAnchor="10.0" AnchorPane.topAnchor="10.0" />
+      <Line fx:id="line123" endX="-100.0" endY="-15.0" layoutX="180.0" layoutY="30.0" startX="-100.0" startY="15.0" stroke="#d0d0d0" />
+      <Label fx:id="lbl_username" alignment="CENTER" layoutX="470.0" prefHeight="60.0" prefWidth="230.0" text="hakan.gokmen.sayim" underline="true" AnchorPane.leftAnchor="570.0">
+         <font>
+            <Font name="HelveticaNeueLTPro-Lt" size="16.0" />
+         </font>
+         <effect>
+            <Glow level="0.2" />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <MaterialIconView fx:id="addicon" fill="#ff4d4d" glyphName="PERSON_ADD" layoutX="14.0" layoutY="51.0" size="40" AnchorPane.bottomAnchor="9.0" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="11.0" />
+      <Label id="lbl_namesurname" fx:id="lbl_count" layoutX="499.0" prefHeight="60.0" prefWidth="95.0" text="1000 users" AnchorPane.rightAnchor="20.0">
+         <font>
+            <Font name="HelveticaNeueLTPro-Lt" size="18.0" />
+         </font>
+      </Label>
+      <MaterialIconView fx:id="empty" fill="#909090" glyphName="ACCOUNT_CIRCLE" layoutX="10.0" layoutY="55.0" size="50" />
+   </children>
+   <cursor>
+      <Cursor fx:constant="DEFAULT" />
+   </cursor>
+</fx:root>

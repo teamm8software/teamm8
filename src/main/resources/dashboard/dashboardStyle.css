@@ -1,0 +1,100 @@
+.menu:hover {
+-fx-background-color:#ff4d4d;
+}
+.menu:pressed {
+-fx-background-color:#ff6666;
+}
+.menu:
+#circle_img:hover{
+-fx-effect: dropShadow(three-pass-box, #ff4d4d, 10, 0, 0, 0);
+}
+#exitbtn:hover {
+         -fx-fill:#62727b
+}
+#minicon:hover{
+-fx-effect: dropShadow(three-pass-box, #adadad, 3, 0, 0, 0);
+}
+.scroll_pane:focused{
+    -fx-background-color:transparent;
+}
+.scroll_pane{
+    -fx-background-color:transparent;
+}
+
+/****************************************************************
+
+  ScrollBar Skin
+
+****************************************************************/
+.scroll-bar{
+ -fx-background-color:  transparent;
+ -fx-background-radius: 0;
+}
+.scroll-bar:horizontal .track,
+.scroll-bar:vertical .track {
+ -fx-background-color: transparent;
+ -fx-border-color:transparent;
+ -fx-background-radius: 0;
+}
+.scroll-bar:vertical .track-background,
+.scroll-bar:horizontal .track-background {
+ -fx-background-color: transparent;
+ -fx-background-insets: 0;
+ -fx-background-radius: 0;
+}
+.scroll-bar:horizontal .thumb {
+ -fx-background-color: #62727b;
+ -fx-background-insets: 4 0 4 0;
+ -fx-background-radius: 0;
+}
+.scroll-bar:vertical .thumb {
+ -fx-background-color: #62727b;
+ -fx-background-insets: 0 4 0 4;
+ -fx-background-radius: 0;
+}
+.scroll-bar:horizontal .thumb:hover,
+.scroll-bar:vertical .thumb:hover {
+ -fx-background-color: #586770;
+}
+.scroll-bar:horizontal .thumb:pressed,
+.scroll-bar:vertical .thumb:pressed {
+ -fx-background-color: #586770;
+}
+.scroll-bar:vertical .increment-button, .scroll-bar:vertical .decrement-button {
+ -fx-background-color:transparent;
+ -fx-background-radius: 0;
+ -fx-padding: 5;
+}
+.scroll-bar:horizontal .increment-button, .scroll-bar:horizontal .decrement-button {
+ -fx-background-color:transparent;
+ -fx-background-radius: 0;
+ -fx-padding: 5;
+}
+.scroll-bar:horizontal .increment-arrow {
+ -fx-shape: "M 0 0 L 4 8 L 8 0 Z";
+ -fx-background-color: #62727b;
+ -fx-padding: 0.25em;
+ -fx-rotate: -90;
+}
+.scroll-bar:vertical .increment-arrow {
+ -fx-background-color: #62727b;
+ -fx-shape: "M 0 0 L 4 8 L 8 0 Z";
+ -fx-padding: 0.25em;
+ -fx-rotate: 0;
+}
+.scroll-bar:horizontal .decrement-arrow {
+ -fx-background-color: #62727b;
+ -fx-shape: "M 0 0 L 4 8 L 8 0 Z";
+ -fx-padding: 0.25em;
+ -fx-rotate: 90;
+}
+.scroll-bar:vertical .decrement-arrow {
+ -fx-background-color: #62727b;
+ -fx-shape: "M 0 0 L 4 8 L 8 0 Z";
+ -fx-padding: 0.25em;
+ -fx-rotate: -180;
+}
+.scroll-bar:vertical:focused,
+.scroll-bar:horizontal:focused {
+ -fx-background-color: transparent,#102128,#102128;
+}

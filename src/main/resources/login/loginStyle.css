@@ -1,0 +1,27 @@
+#eyeVis {
+  -fx-fill:#62727b;
+}
+
+#eyeVis:hover {
+  -fx-fill:#dae7f3;
+}
+
+#btn_login:hover {
+-fx-text-fill:#ffffff;
+
+}
+#btn_exit:hover {
+-fx-text-fill:#ffffff;
+
+}
+#lbl_forgotpass{
+    -fx-text-fill:#ffffff;
+}
+
+#icon_exit_css:hover{
+    -fx-fill:#ffffff;
+}
+
+#icon_exit_css:pressed{
+    -fx-fill:#37464f;
+}

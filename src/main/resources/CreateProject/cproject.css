@@ -1,0 +1,34 @@
+.back {
+-fx-background-color:#ffffff;
+-fx-border-color:#aeaeae;
+-fx-border-width:3px;
+}
+.list {
+-fx-border-width:0px;
+}
+.jfx-combo-box .input-line{
+	-fx-pref-height: 0px;
+}
+.jfx-combo-box .input-focused-line{
+	-fx-pref-height: 0px;
+}
+.jfx-text-area .input-line{
+	-fx-pref-height: 0px;
+}
+.jfx-text-area .input-focused-line{
+	-fx-pref-height: 0px;
+}
+.jfx-text-field .input-line{
+	-fx-pref-height: 2px;
+}
+.jfx-text-field .input-focused-line{
+	-fx-pref-height: 2px;
+}
+.jfx-text-field {
+    -fx-text-inner-color: #d75959;
+
+}
+
+#icon_exit:hover {
+-fx-fill:#62727b
+}

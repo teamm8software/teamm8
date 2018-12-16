@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.materialicons.MaterialIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="rootStackPane" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="login.loginController">
+   <children>
+      <AnchorPane fx:id="rootAnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="530.0" prefWidth="600.0" style="-fx-background-color: #102027;">
+         <ImageView fitHeight="69.0" fitWidth="320.0" layoutX="140.0" layoutY="120.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@../img/loginlogo.png" />
+            </image>
+            <viewport>
+               <Rectangle2D height="69.0" width="320.0" />
+            </viewport>
+         </ImageView>
+         <JFXTextField fx:id="txt_username" focusColor="#ff4d4d" layoutX="151.0" layoutY="230.0" prefHeight="54.0" prefWidth="302.0" promptText="USERNAME" style="-fx-prompt-text-fill: #4f5b62; -fx-text-fill: #ffffff;" unFocusColor="#37474f">
+            <font>
+               <Font name="HelveticaNeueLTPro-Lt" size="16.0" />
+            </font></JFXTextField>
+         <JFXPasswordField fx:id="txt_pass" focusColor="#ff4d4d" layoutX="151.0" layoutY="319.0" prefHeight="54.0" prefWidth="302.0" promptText="PASSWORD" style="-fx-text-fill: #ffffff; -fx-prompt-text-fill: #4f5b62;" unFocusColor="#37474f">
+            <font>
+               <Font name="HelveticaNeueLTPro-Lt" size="16.0" />
+            </font></JFXPasswordField>
+         <JFXButton id="btn_login" fx:id="btn_login" layoutX="151.0" layoutY="401.0" prefHeight="47.0" prefWidth="142.0" style="-fx-background-radius: 0; -fx-background-color: #62727b;" styleClass="buttons" text="LOGIN" textFill="#e1e1e1">
+            <font>
+               <Font name="HelveticaNeueLTPro-Md" size="14.0" />
+            </font></JFXButton>
+         <JFXButton fx:id="btn_exit" layoutX="311.0" layoutY="401.0" prefHeight="47.0" prefWidth="142.0" style="-fx-background-radius: 0; -fx-background-color: #62727b;" styleClass="buttons" text="EXIT" textFill="#e1e1e1">
+            <font>
+               <Font name="HelveticaNeueLTPro-Md" size="14.0" />
+            </font></JFXButton>
+         <MaterialIconView fill="#62727b" glyphName="PERSON" layoutX="109.0" layoutY="284.0" size="35" strokeWidth="0.0" />
+         <MaterialIconView fill="#62727b" glyphName="LOCK" layoutX="109.0" layoutY="364.0" size="35" strokeWidth="0.0" />
+         <Label id="lbl_forgotpass" layoutX="151.0" layoutY="464.0" prefHeight="47.0" prefWidth="154.0" text="Forgot password?" textFill="WHITE">
+            <padding>
+               <Insets bottom="60.0" />
+            </padding>
+            <font>
+               <Font name="HelveticaNeueLTPro-Lt" size="13.0" />
+            </font>
+         </Label>
+         <MaterialIconView id="icon_exit_css" fx:id="icon_exit" fill="#62727b" glyphName="POWER_SETTINGS_NEW" layoutX="554.0" layoutY="46.0" size="25" />
+         <JFXTextField fx:id="txt_show_pass" focusColor="#ff4d4d" layoutX="151.0" layoutY="319.0" prefHeight="54.0" prefWidth="302.0" promptText="PASSWORD" style="-fx-prompt-text-fill: #4f5b62; -fx-text-fill: #ffffff;" unFocusColor="#37474f">
+            <font>
+               <Font name="HelveticaNeueLTPro-Lt" size="16.0" />
+            </font></JFXTextField>
+         <MaterialIconView id="eyeVis" fx:id="eyeVis" fill="#62727b" glyphName="VISIBILITY_OFF" layoutX="424.0" layoutY="358.0" size="18" />
+      </AnchorPane>
+   </children>
+</StackPane>

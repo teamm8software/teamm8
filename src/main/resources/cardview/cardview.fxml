@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.materialicons.MaterialIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<fx:root id="card_view" fx:id="card_view" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200" prefWidth="360" stylesheets="@cardStyle.css" type="AnchorPane" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+   <children>
+      <Label fx:id="lbl_task_name" alignment="CENTER" layoutX="10.0" layoutY="8.0" prefHeight="32.0" prefWidth="300.0" text="Task Name" textAlignment="CENTER" textFill="#d75959">
+         <font>
+            <Font name="HelveticaNeueLTPro-MdCn" size="20.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <padding>
+            <Insets left="15.0" />
+         </padding>
+      </Label>
+      <Label layoutX="21.0" layoutY="43.0" text="Description:" textFill="#5b5b5b">
+         <font>
+            <Font name="HelveticaNeueLTPro-MdCn" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbl_description" alignment="TOP_LEFT" layoutX="23.0" layoutY="76.0" prefHeight="85.0" prefWidth="315.0" text="description_details&#10;" textAlignment="JUSTIFY">
+         <font>
+            <Font name="HelveticaNeueLTPro-Lt" size="13.0" />
+         </font></Label>
+      <Label layoutX="21.0" layoutY="165.0" prefHeight="18.0" prefWidth="66.0" text="Start Date:" textFill="#5b5b5b">
+         <font>
+            <Font name="HelveticaNeueLTPro-MdCn" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="195.0" layoutY="165.0" prefHeight="18.0" prefWidth="59.0" text="End Date:" textFill="#5b5b5b">
+         <font>
+            <Font name="HelveticaNeueLTPro-MdCn" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbl_start_date" layoutX="95.0" layoutY="166.0" prefHeight="22.0" prefWidth="80.0" text="27-11-1998" textFill="#909090">
+         <font>
+            <Font name="HelveticaNeueLTPro-Lt" size="14.0" />
+         </font></Label>
+      <Label fx:id="lbl_end_date" layoutX="262.0" layoutY="166.0" prefHeight="22.0" prefWidth="80.0" text="27-11-2049" textFill="#909090">
+         <font>
+            <Font name="HelveticaNeueLTPro-Lt" size="14.0" />
+         </font></Label>
+      <ProgressBar fx:id="pBar" layoutY="187.0" prefHeight="3.0" prefWidth="360.0" progress="0.67" styleClass="pBar" AnchorPane.bottomAnchor="-18.0" AnchorPane.leftAnchor="-18.0" AnchorPane.rightAnchor="-18.0" />
+      <MaterialIconView fx:id="setDone" fill="#102128" glyphName="DONE_ALL" layoutX="314.0" layoutY="40.0" size="32" styleClass="done" />
+      <Line endX="17.0" endY="60.0" layoutX="5.0" layoutY="6.0" startX="40.0" startY="60.0" stroke="#bfbfbf" />
+      <Line endX="17.0" endY="60.0" layoutX="5.0" layoutY="127.0" startX="40.0" startY="60.0" stroke="#bfbfbf" />
+      <Line endX="17.0" endY="60.0" layoutX="179.0" layoutY="127.0" startX="40.0" startY="60.0" stroke="#bfbfbf" />
+   </children>
+   <cursor>
+      <Cursor fx:constant="HAND" />
+   </cursor>
+</fx:root>

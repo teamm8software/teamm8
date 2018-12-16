@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.materialicons.MaterialIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="rootStackPane" prefHeight="518.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CreateTask.CreateTaskController">
+   <children>
+      <AnchorPane layoutY="-10.0" prefHeight="520.0" prefWidth="600.0" style="-fx-background-color: #ffffff; -fx-border-width: 5; -fx-border-color: #e0e0e0;">
+         <children>
+            <JFXTextField fx:id="txt_taskname" alignment="CENTER" focusColor="#6b6b6b" layoutX="108.0" layoutY="50.0" prefHeight="41.0" prefWidth="384.0" promptText="Task Name" stylesheets="@CreateTaskStyle.css" unFocusColor="#bfbfbf">
+               <font>
+                  <Font name="HelveticaNeueLTPro-MdCn" size="20.0" />
+               </font>
+            </JFXTextField>
+            <DatePicker fx:id="date_start" layoutX="305.0" layoutY="210.0" prefHeight="25.0" prefWidth="160.0" promptText="Start Date" styleClass="datePicker" />
+            <DatePicker fx:id="date_end" layoutX="305.0" layoutY="250.0" prefHeight="25.0" prefWidth="160.0" promptText="End Date" styleClass="datePicker" />
+            <JFXButton fx:id="btn_assign" layoutX="108.0" layoutY="450.0" prefHeight="49.0" prefWidth="384.0" style="-fx-background-color: #ff4d4d;" text="ASSIGN" textFill="WHITE">
+               <font>
+                  <Font name="HelveticaNeueLTPro-Md" size="14.0" />
+               </font>
+            </JFXButton>
+            <MaterialIconView fx:id="icon_exit" fill="#d75959" glyphName="POWER_SETTINGS_NEW" layoutX="560.0" layoutY="35.0" size="25" text="" />
+            <JFXComboBox fx:id="cmb_user" focusColor="#ff4d4d" layoutX="305.0" layoutY="130.0" prefHeight="25.0" prefWidth="160.0" promptText=" Select User" style="-fx-font-family: HelveticaNeueLT Pro 45 Lt; -fx-background-color: #f9f9f9; -fx-border-width: 1; -fx-border-color: #e0e0e0;" stylesheets="@CreateTaskStyle.css" />
+            <JFXComboBox fx:id="cmb_project" focusColor="#ff4d4d" layoutX="305.0" layoutY="170.0" prefHeight="25.0" prefWidth="160.0" promptText=" Select Project" style="-fx-font-family: HelveticaNeueLT Pro 45 Lt; -fx-background-color: #f9f9f9; -fx-border-width: 1; -fx-border-color: #e0e0e0;" stylesheets="@CreateTaskStyle.css" />
+            <JFXTextArea fx:id="txt_description" focusColor="#ff4d4d" layoutX="108.0" layoutY="310.0" prefHeight="117.0" prefWidth="384.0" promptText=" Please enter a description" style="-fx-background-color: #f9f9f9; -fx-border-width: 1; -fx-border-color: #e0e0e0;" stylesheets="@CreateTaskStyle.css">
+               <font>
+                  <Font name="HelveticaNeueLTPro-Lt" size="14.0" />
+               </font>
+            </JFXTextArea>
+            <Label layoutX="140.0" layoutY="130.0" prefHeight="30.0" prefWidth="125.0" text="Select User :" textFill="#5b5b5b">
+               <font>
+                  <Font name="HelveticaNeueLTPro-MdCn" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="140.0" layoutY="170.0" prefHeight="30.0" prefWidth="125.0" text="Select Project :" textFill="#5b5b5b">
+               <font>
+                  <Font name="HelveticaNeueLTPro-MdCn" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="140.0" layoutY="210.0" prefHeight="30.0" prefWidth="117.0" text="Start Date :" textFill="#5b5b5b">
+               <font>
+                  <Font name="HelveticaNeueLTPro-MdCn" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="140.0" layoutY="250.0" prefHeight="30.0" prefWidth="117.0" text="End Date :" textFill="#5b5b5b">
+               <font>
+                  <Font name="HelveticaNeueLTPro-MdCn" size="20.0" />
+               </font>
+            </Label>
+            <Line endX="-70.0" layoutX="241.0" layoutY="160.0" startX="-100.0" stroke="#bfbfbf" />
+            <Line endX="-70.0" layoutX="241.0" layoutY="200.0" startX="-100.0" stroke="#bfbfbf" />
+            <Line endX="-70.0" layoutX="241.0" layoutY="240.0" startX="-100.0" stroke="#bfbfbf" />
+            <Line endX="-70.0" layoutX="241.0" layoutY="280.0" startX="-100.0" stroke="#bfbfbf" />
+         </children>
+         <padding>
+            <Insets top="50.0" />
+         </padding>
+      </AnchorPane>
+   </children>
+</StackPane>
